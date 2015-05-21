@@ -1,8 +1,17 @@
-<div class="row">
-	<div class="col s12">
-		<%= render 'cards/fashion' %>
+<div id="card-container" class="row">
+	<div id="cards" class="col s12 m6 l4">
 		<%= render 'cards/qa' %>
-		<%= render 'cards/exclusive' %>
+	</div>
+	<div id="cards" class="col s12 m6 l4">
+		<%= render 'cards/artists' %>
+	</div>
+	<div id="cards" class="row">
+		<div class="col s12 m6 l4">
+			<%= render 'cards/exclusive' %>
+		</div>
+		<div id="cards" class="col s12 m6 l4">
+			<%= render 'cards/fashion' %>
+		</div>
 	</div>
 </div>
 
