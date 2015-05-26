@@ -18,6 +18,9 @@
 </div>
 
 
+<%= render 'layouts/modal' %>
+
+
 <script>
 $('#card-container').append($('#card-container .card-order').sort(function(a,b){
    return parseInt(a.getAttribute('order'))-parseInt(b.getAttribute('order'))
