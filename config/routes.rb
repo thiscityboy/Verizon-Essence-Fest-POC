@@ -7,7 +7,4 @@ Rails.application.routes.draw do
   root 'essence#index'
 
   
-  match '/sandbox', to: 'essence#sandbox', via: 'get'
-
-
 end

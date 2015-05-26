@@ -1,92 +1,65 @@
-<style>
-:root {
-  overflow: hidden;
-}
-div, span {
-  position: absolute;
-}
-div {
-  width: 550px;
-  height: 550px;
-  left: calc(50% - 275px);
-  top: calc(50% - 275px);
-}
-span {
-  width: 8px;
-  height: 60px;
-  left: calc(50% - 4px);
-  border-radius: 4px;
-  -webkit-transform-origin: 50% 275px;
-  transform-origin: 50% 275px;
-}
-.disabled {
-  pointer-events: none;
-}
-</style>
 
-  <script>
-var randomColor = (function () {
-  var randomInt = function (min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-  };
-  return function () {
-    var h = randomInt(0, 360);
-    var s = randomInt(42, 98);
-    var l = randomInt(38, 90);
-    return "hsl(" + h + "," + s + "%," + l + "%)";
-  };
-})();
+<div id="card-container">
+  <div class="row">
+    <div class="card-order col s12 m6 l4" order="4">
+      <%= render 'cards/artists' %>
+    </div>
+    <div class="card-order col s12 m6 l4" order="1">
+      <%= render 'cards/qa' %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="card-order col s12 m6 l4" order="2">
+      <%= render 'cards/exclusive' %>
+    </div>
+    <div class="card-order col s12 m6 l4" order="3">
+      <%= render 'cards/fashion' %>
+    </div>
+  </div>
+</div>
 
-var jumpInCircle = function(map) {
-  var params = new Map();
-  params.set("el", map.get("el"));
-  params.set("rotateZ", map.get("rotateZ"));
-  params.set("translateY", [map.get("translateY"), 0]);
-  params.set("complete", function() {
-    params.get("el").removeAttribute("class");
+
+<script>
+$('#card-container').append($('#card-container .card-order').sort(function(a,b){
+   return parseInt(a.getAttribute('order'))-parseInt(b.getAttribute('order'))
+}));
+</script>
+
+
+<script>
+  animate({
+  el: ".tab",
+  opacity: [0, 1],    // fades in from 0 to 1
+  translateY: [-200, 0],
+  duration: 1000,
+  easing: 'easeInExpo'
   });
-  animate(params);
-};
 
-var enableHover = function() {
-  params.forEach(function(param) {
-    var el = param.get("el");
-    var rotation = param.get("rotateZ");
-    var params = new Map();
-    params.set("el", el);
-    params.set("duration", 500);
-    params.set("rotateZ", [rotation, rotation]);
-    params.set("translateY", 215);
-    params.set("easing", "easeOutCirc");
-    params.set("complete", function() {
-      jumpInCircle(params);
-    });
-    el.addEventListener("touchstart", function() {
-      el.className = "disabled";
-      animate(params);
-    });
+  animate({
+  el: "#card1",
+  translateX: [-800, 0],
+  duration: 1500,
+  easing: 'easeInExpo'
   });
-};
 
-var div = document.createElement("div");
-var total = 100;
-var params = [];
+  animate({
+  el: "#card2",
+  translateX: [-800, 0],
+  duration: 3000,
+  easing: 'easeInExpo'
+  });
 
-for (var i=0; i<total; i++) {
-  var span = document.createElement("span");
-  span.style.background = randomColor();
+  animate({
+  el: "#card3",
+  translateX: [-800, 0],
+  duration: 4500,
+  easing: 'easeInExpo'
+  });
 
-  var options = new Map();
-  options.set("el", span);
-  options.set("rotateZ", i*(360/total));
-  options.set("duration", 3200);
-  options.set("easing", "easeOutBounce");
-  if (i == 0) options.set("complete", enableHover);
-
-  params.push(options);
-  div.appendChild(span);
-}
-
-document.body.appendChild(div);
-params.forEach(animate);
- </script>
+  animate({
+  el: "#card4",
+  translateX: [-800, 0],
+  duration: 6000,
+  easing: 'easeInExpo'
+  });
+</script>
