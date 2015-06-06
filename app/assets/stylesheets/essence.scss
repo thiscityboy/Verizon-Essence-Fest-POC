@@ -3,6 +3,34 @@
 	height: 400px;
 }
 */
+.btn-verizon, .btn-verizon:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #E4001C;
+  text-align: center;
+  letter-spacing: .5px;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
+}
+
+a {
+  color: #E4001C;
+}
+
+ .instagram-image {
+    background-color: #ffffff;
+    border: solid 3px #ffffff;
+    display: block;
+    margin: 20px auto;
+    width: 290px;
+  }
+  .instagram-image {
+    height: 290px;
+  }
 
 .btn-floating {
   position: fixed;

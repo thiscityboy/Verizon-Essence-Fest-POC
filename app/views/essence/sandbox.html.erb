@@ -1,65 +1,40 @@
 
-<div id="card-container">
-  <div class="row">
-    <div class="card-order col s12 m6 l4" order="4">
-      <%= render 'cards/artists' %>
-    </div>
-    <div class="card-order col s12 m6 l4" order="1">
-      <%= render 'cards/qa' %>
-    </div>
+  <div id='instagram' class='tab-pane active'>
+    <i class='fa fa-refresh fa-spin throbber dimmed'></i>
+    <!-- Instagram feed populated by JavaScript -->
   </div>
-  <div class="row">
-    <div class="card-order col s12 m6 l4" order="2">
-      <%= render 'cards/exclusive' %>
-    </div>
-    <div class="card-order col s12 m6 l4" order="3">
-      <%= render 'cards/fashion' %>
-    </div>
-  </div>
-</div>
+
+
+
 
 
 <script>
-$('#card-container').append($('#card-container .card-order').sort(function(a,b){
-   return parseInt(a.getAttribute('order'))-parseInt(b.getAttribute('order'))
-}));
-</script>
+// $(function() {
 
 
-<script>
-  animate({
-  el: ".tab",
-  opacity: [0, 1],    // fades in from 0 to 1
-  translateY: [-200, 0],
-  duration: 1000,
-  easing: 'easeInExpo'
-  });
 
-  animate({
-  el: "#card1",
-  translateX: [-800, 0],
-  duration: 1500,
-  easing: 'easeInExpo'
-  });
+//   var instagramFeed = new OnScreen({
+//     campaignId: 669,
+//     filter: 'instagram',
+//     show: function(data) {
+//       var newMessages = data.messages, element = null;
+//       for(var i = 0; i < newMessages.length; i++) {
+//         switch(newMessages[i].message_type){
+//           case "Messages::Media":
+//             element = $("<img />", { id: newMessages[i].external_id, class: 'instagram-image', src: newMessages[i].media, alt: newMessages[i].sender, data_date: newMessages[i].moderatedAt })
+//           break;
+//           default:
+//             console.error("Unknown message type: %s", newMessages[i].message_type);
+//           break;
+//         }
+//         $(element).hide().prependTo("#instagram").fadeIn();
+//       }
+//     }
+//   });
+//   instagramFeed.load();
 
-  animate({
-  el: "#card2",
-  translateX: [-800, 0],
-  duration: 3000,
-  easing: 'easeInExpo'
-  });
 
-  animate({
-  el: "#card3",
-  translateX: [-800, 0],
-  duration: 4500,
-  easing: 'easeInExpo'
-  });
 
-  animate({
-  el: "#card4",
-  translateX: [-800, 0],
-  duration: 6000,
-  easing: 'easeInExpo'
-  });
+
+// });
 </script>

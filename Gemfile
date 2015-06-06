@@ -1,6 +1,6 @@
 source 'https://repo.fury.io/svdEKiyaqdZ1xhagHajp/me/'
 source 'https://rubygems.org'
-ruby '2.1.5'
+ruby '2.2.0'
 
 gem 'rails', '4.2'
 gem 'puma'
@@ -13,6 +13,10 @@ gem 'paperclip'
 gem 'msg_toolbox'
 gem 'font-awesome-rails'
 
+# Custom gems
+gem 'msg_on_screen'
+gem 'msg_scratch'
+
 group :development, :test do
   gem 'better_errors'
   gem 'rspec-rails'
@@ -21,6 +25,7 @@ group :development, :test do
   gem 'foreman'
   gem 'spring'
   gem 'quiet_assets'
+  gem 'dotenv'
 end
 
 group :production do
