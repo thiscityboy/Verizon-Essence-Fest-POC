@@ -3,6 +3,10 @@ body {
   color: #595A5D;
 }
 
+.slider .indicators .indicator-item.active {
+  background-color: #E4001C;
+}
+
 .card .card-title {
   font-size: 18px;
   color: #595A5D;
@@ -13,6 +17,63 @@ body {
 .container {
   width: 97%;
 }
+
+#vip-enter {
+  margin-top: 100px;
+}
+
+.slider .indicators .indicator-item {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 12px;
+  background-color: #e0e0e0;
+  -webkit-transition: background-color .3s;
+  -moz-transition: background-color .3s;
+  -o-transition: background-color .3s;
+  -ms-transition: background-color .3s;
+  transition: background-color .3s;
+  border-radius: 50%;
+}
+
+input[type=tel] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s;
+}
+
+/* label underline focus color */
+input[type=tel]:focus {
+  border-bottom: 1px solid #E4001C !important;
+}
+
+input[type=text]:focus {
+  border-bottom: 1px solid #E4001C !important;
+}
+
+.input-field input[type=text]:focus + label {
+  color: #E4001C;
+}
+
+.input-field input[type=tel]:focus + label {
+  color: #E4001C;
+}
+
+
 .row .col {
   float: left;
   -webkit-box-sizing: border-box;
@@ -20,6 +81,8 @@ body {
   box-sizing: border-box;
   padding: 10px;
 }
+
+
 
 .card {
   position: relative;
@@ -34,6 +97,7 @@ body {
   background-color: #E4001C;
   text-align: center;
   letter-spacing: .5px;
+  line-height: 1em;
   -webkit-transition: .2s ease-out;
   -moz-transition: .2s ease-out;
   -o-transition: .2s ease-out;
@@ -46,10 +110,15 @@ a {
   color: #E4001C;
 }
 
+h6 {
+  font-size: 1.25em;
+}
+
 .btn-floating {
   position: fixed;
-  top: 5%;
+  top: 2%;
   right: 5%;
+  z-index: 9999;
 }
 
 #card-container {
@@ -62,6 +131,7 @@ a {
 
 .mdi-communication-location-on {
   color: #E4001C;
+  margin-left: 10px;
 }
 
 

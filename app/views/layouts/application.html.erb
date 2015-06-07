@@ -20,29 +20,31 @@
   </div>
 
 
+  <%= render 'layouts/modal' %>
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"></script>
 
 
 <script>
-  var instagramFeed = new OnScreen({
-    campaignId: '<%= @osp_campaign_id %>',
-    filter: 'instagram',
-    show: function(data) {
-      var newMessages = data.messages, element = null;
-      for(var i = 0; i < newMessages.length; i++) {
-        switch(newMessages[i].message_type){
-          case "Messages::Media":
-            element = $("<img />", { id: newMessages[i].external_id, class: 'instagram-image', src: newMessages[i].media, alt: newMessages[i].sender, data_date: newMessages[i].moderatedAt })
-          break;
-          default:
-            console.error("Unknown message type: %s", newMessages[i].message_type);
-          break;
-        }
-        $(element).hide().prependTo("#instagram").fadeIn();
-      }
-    }
-  });
-  instagramFeed.load();
+  // var instagramFeed = new OnScreen({
+  //   campaignId: '<%= @osp_campaign_id %>',
+  //   filter: 'instagram',
+  //   show: function(data) {
+  //     var newMessages = data.messages, element = null;
+  //     for(var i = 0; i < newMessages.length; i++) {
+  //       switch(newMessages[i].message_type){
+  //         case "Messages::Media":
+  //           element = $("<img />", { id: newMessages[i].external_id, class: 'instagram-image', src: newMessages[i].media, alt: newMessages[i].sender, data_date: newMessages[i].moderatedAt })
+  //         break;
+  //         default:
+  //           console.error("Unknown message type: %s", newMessages[i].message_type);
+  //         break;
+  //       }
+  //       $(element).hide().prependTo("#instagram").fadeIn();
+  //     }
+  //   }
+  // });
+  // instagramFeed.load();
 </script>
 
 </body>

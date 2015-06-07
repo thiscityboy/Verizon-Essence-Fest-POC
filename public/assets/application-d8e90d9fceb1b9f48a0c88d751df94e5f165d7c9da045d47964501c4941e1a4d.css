@@ -1804,20 +1804,44 @@
 .fa-medium:before {
   content: "\f23a";
 }
-/*.slider {
-	width: 100%;
-	height: 400px;
+/* line 1, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+body {
+  font-family: "VerizonApexBook";
+  color: #595A5D;
 }
-*/
-/* line 8, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+
+/* line 6, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.slider .indicators .indicator-item.active {
+  background-color: #E4001C;
+}
+
+/* line 10, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.card .card-title {
+  font-size: 18px;
+  color: #595A5D;
+  font-family: "VerizonApexBook";
+  border-radius: 0px;
+}
+
+/* line 17, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.container {
+  width: 97%;
+}
+
+/* line 21, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+#vip-enter {
+  margin-top: 100px;
+}
+
+/* line 25, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
 .slider .indicators .indicator-item {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   margin: 0 12px;
-  background-color: #96989C;
+  background-color: #e0e0e0;
   -webkit-transition: background-color .3s;
   -moz-transition: background-color .3s;
   -o-transition: background-color .3s;
@@ -1826,32 +1850,114 @@
   border-radius: 50%;
 }
 
-/* line 24, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-.slider .indicators .indicator-item.active {
-  background-color: #E6001C;
+/* line 41, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+input[type=tel] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0;
+  outline: none;
+  height: 3rem;
+  width: 100%;
+  font-size: 1rem;
+  margin: 0 0 15px 0;
+  padding: 0;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s;
 }
 
-/* line 28, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-.slider .indicators {
-  position: absolute;
+/* label underline focus color */
+/* line 60, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+input[type=tel]:focus {
+  border-bottom: 1px solid #E4001C !important;
+}
+
+/* line 64, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+input[type=text]:focus {
+  border-bottom: 1px solid #E4001C !important;
+}
+
+/* line 68, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.input-field input[type=text]:focus + label {
+  color: #E4001C;
+}
+
+/* line 72, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.input-field input[type=tel]:focus + label {
+  color: #E4001C;
+}
+
+/* line 77, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.row .col {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* line 87, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.card {
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+}
+
+/* line 94, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.btn-verizon, .btn-verizon:hover {
+  text-decoration: none;
+  color: #FFF;
+  background-color: #E4001C;
   text-align: center;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 10px;
+  letter-spacing: .5px;
+  line-height: 1em;
+  -webkit-transition: .2s ease-out;
+  -moz-transition: .2s ease-out;
+  -o-transition: .2s ease-out;
+  -ms-transition: .2s ease-out;
+  transition: .2s ease-out;
+  cursor: pointer;
 }
 
-/* line 37, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+/* line 109, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+a {
+  color: #E4001C;
+}
+
+/* line 113, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+h6 {
+  font-size: 1.25em;
+}
+
+/* line 117, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.btn-floating {
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  z-index: 9999;
+}
+
+/* line 124, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
 #card-container {
   margin-top: 100px;
 }
 
-/* line 41, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+/* line 128, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
 .btn-verizon {
   background: #E6001C;
 }
 
-/* line 46, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+/* line 132, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+.mdi-communication-location-on {
+  color: #E4001C;
+  margin-left: 10px;
+}
+
+/* line 138, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
 .tab {
   position: absolute;
   z-index: 100;
@@ -1859,36 +1965,53 @@
   top: -8px;
 }
 
-/* line 53, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-#fashion {
+/* line 145, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
+#fashion, #qa, #exclusive, #artists {
+  height: 100%;
   width: 100%;
-  height: 450px;
-  background-color: red;
 }
-
-/* line 59, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-#qanda {
-  width: 100%;
-  height: 650px;
-  background-color: cyan;
+@font-face {
+  font-family: 'VerizonApexBook';
+  src: url(/assets/verizonapex-book-webfont-ba2de99aa7aa0abb18007a36dcc507278f91d5311965798dbd0dcdd90bf89ea2.eot);
+  src: url(/assets/verizonapex-book-webfont-ba2de99aa7aa0abb18007a36dcc507278f91d5311965798dbd0dcdd90bf89ea2.eot) format("embedded-opentype"), url(/assets/verizonapex-book-webfont-538d1f285ab7bbcddd5f813de96550dad3e0b1035b0ccc8666b5402ad483a389.woff) format("woff"), url(/assets/verizonapex-book-webfont-dccadf8b7c5f59ad01c24c82958510dd4568f6976e4a3c01160f318975d95a38.ttf) format("truetype"), url(/assets/verizonapex-book-webfont-e128466eca9802e1d0e73ea6d9fc3825e402c8f8627ccc389737defc1b700463.svg#VerizonApexBook) format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
-
-/* line 65, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-#promo {
-  width: 100%;
-  height: 550px;
-  background-color: orange;
+@font-face {
+  font-family: 'VerizonApexMedium';
+  src: url(/assets/verizonapex-medium-webfont-aecf09947ebf96dab7e9c1ebc2eb4d75d6669a415b38b12c1d0bb93d085ecdb8.eot);
+  src: url(/assets/verizonapex-medium-webfont-aecf09947ebf96dab7e9c1ebc2eb4d75d6669a415b38b12c1d0bb93d085ecdb8.eot) format("embedded-opentype"), url(/assets/verizonapex-medium-webfont-7ed958bfa434b339eb8fe385c5d23ab0388f3587a4740b299ac7ed6a9f3980d2.woff) format("woff"), url(/assets/verizonapex-medium-webfont-1175a9d2b9152254bd8bcc545fbedb4002e866c622761df0bc36dc6c2063bf75.ttf) format("truetype"), url(/assets/verizonapex-medium-webfont-29234101812e1ec49c763f342855ff58c15cce3bc939e2bc985be55f6f170009.svg#VerizonApexMedium) format("svg");
 }
-
-/* line 72, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-.parallax-container {
-  height: 600px;
+@font-face {
+  font-family: 'VerizonApexMedium';
+  src: url(/assets/VerizonApexBold-1454b31fe35ab73f6b28dc110dcb779982962e0f818236ab33e9a5b4b2cc2e5e.eot);
+  src: url(/assets/VerizonApexBold-1454b31fe35ab73f6b28dc110dcb779982962e0f818236ab33e9a5b4b2cc2e5e.eot) format("embedded-opentype"), url(/assets/VerizonApexBold-bfced8556d5f0163a0e06251f282c257d186910949e57fd6e9b8d2db77adf4bd.woff) format("woff"), url(/assets/VerizonApexBold-ecd7a94cfb88567bcf801a6344729c827945f04c6d4df3249920cff5d985fa1e.svg#VerizonApexBold) format("svg");
+  font-weight: bold;
 }
-
-/* line 76, /Users/scott.galetto/Dev/msg-essence-2015/app/assets/stylesheets/essence.scss */
-.section.white {
-  padding-top: 100px;
-  padding-bottom: 200px;
+@font-face {
+  font-family: 'VerizonApexBold';
+  src: url(/assets/VerizonApexBold-1454b31fe35ab73f6b28dc110dcb779982962e0f818236ab33e9a5b4b2cc2e5e.eot);
+  src: url(/assets/VerizonApexBold-1454b31fe35ab73f6b28dc110dcb779982962e0f818236ab33e9a5b4b2cc2e5e.eot) format("embedded-opentype"), url(/assets/VerizonApexBold-bfced8556d5f0163a0e06251f282c257d186910949e57fd6e9b8d2db77adf4bd.woff) format("woff"), url(/assets/VerizonApexBold-ecd7a94cfb88567bcf801a6344729c827945f04c6d4df3249920cff5d985fa1e.svg#VerizonApexBold) format("svg");
+}
+@font-face {
+  font-family: 'VerizonApexLight';
+  src: url(/assets/VerizonApex-Light-a3a03eb5fc13934929e9ee2e682d8ecea191e120c2f0284bf9df99c579fd421a.eot);
+  src: url(/assets/VerizonApex-Light-a3a03eb5fc13934929e9ee2e682d8ecea191e120c2f0284bf9df99c579fd421a.eot) format("embedded-opentype"), url(/assets/VerizonApex-Light-b2b6bea3dcfb8cbd8558a6d047f1f6c799ee0f8da9f4e44309f788114e77a3ee.woff) format("woff"), url(/assets/VerizonApex-Light-988f346d6b38ffbce2051995b53146f54ddc32fc05cfbaf816def21e14f188b2.ttf) format("truetype"), url(/assets/VerizonApex-Light-4485ba41cab2403b5f7e7e90206278b68689cfe0a38428edaa1586b4328c9107.svg#VerizonApex-Light) format("svg");
+}
+@font-face {
+  font-family: 'VerizonApexBoldItalic';
+  src: url(/assets/VerizonApex-BoldItalic-05dd147dbfa1147e144ee450f0c8c42ce3ca5da5a6f586a0e50d590fc78e381e.eot);
+  src: url(/assets/VerizonApex-BoldItalic-05dd147dbfa1147e144ee450f0c8c42ce3ca5da5a6f586a0e50d590fc78e381e.eot) format("embedded-opentype"), url(/assets/VerizonApex-BoldItalic-8af5ad9a1f59bf83ef514c3f7bc483deed59119c78d091b5a958696a6ba523cb.woff) format("woff"), url(/assets/VerizonApex-BoldItalic-b59059392b3dccffb6a8c2e899933283e3819e077ddfbc8536d4bf5bcecfbfe9.ttf) format("truetype"), url(/assets/VerizonApex-BoldItalic-9806197334a4242cdd0436cca81590aaa7636a4bf6c7065f7cbb96ce22cd2747.svg#VerizonApex-BoldItalic) format("svg");
+}
+@font-face {
+  font-family: 'VerizonApexExtraboldItalic';
+  src: url(/assets/VerizonApex-ExtraboldItalic-30204c053eb3b3f0f16882b7b1e0aa471a3a0c82b0f968d88c80af181de2bffc.eot);
+  src: url(/assets/VerizonApex-ExtraboldItalic-30204c053eb3b3f0f16882b7b1e0aa471a3a0c82b0f968d88c80af181de2bffc.eot) format("embedded-opentype"), url(/assets/VerizonApex-ExtraboldItalic-89522663f36ba453a0a4d9f9ce338266e0612d118396568afc4eb4ca07a70fe9.woff) format("woff"), url(/assets/VerizonApex-ExtraboldItalic-2e2529a5aec8b71d28b2f5f51bb941af9108dc794e1249533060128fa62affd4.ttf) format("truetype"), url(/assets/VerizonApex-ExtraboldItalic-28a193536ae326acc1bbcb4d336a3c6beb72e0f542262a8b164c1ee954141ae8.svg#VerizonApex-ExtraboldItalic) format("svg");
+}
+@font-face {
+  font-family: 'VerizonApexMediumItalic';
+  src: url(/assets/verizonapex-mediumitalic-b985e55184b9ba62ef90a13f704a0017ed489b19472b356b84566ebd4cc51f38.eot);
+  src: url(/assets/verizonapex-mediumitalic-b985e55184b9ba62ef90a13f704a0017ed489b19472b356b84566ebd4cc51f38.eot) format("embedded-opentype"), url(/assets/verizonapex-mediumitalic-baa7ef00c1010259edbb1b62974b8ccc22ebb97962e4fd9db795417ec01b6a8f.woff) format("woff"), url(/assets/verizonapex-mediumitalic-606554dd9ee02cdc0fe4aaf03f6b575aac861d55c6542093f7703cf4fb8233dd.ttf) format("truetype"), url(/assets/verizonapex-mediumitalic-3083695c5ecce63817d989311aee482f68451792ad8e876aa1fc13cff20d3c20.svg#VerizonApexMediumItalic) format("svg");
 }
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
@@ -1907,3 +2030,4 @@
 
  */
 
+ @import 'fonts.scss';
