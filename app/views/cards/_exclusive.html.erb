@@ -1,24 +1,21 @@
+
+
 <div class="card col s12 m6 l6">
 	<div class="card-image waves-effect waves-block waves-light">
-		<img class="activator" src="<%= asset_path 'exclusive-content.jpg' %>">
+		<img class="activator" src="<%= asset_path 'vip2.png' %>">
 	</div>
 	<div class="card-content">
-		<span class="card-title">VIP Superlounge Pass<i class="mdi-navigation-more-vert right"></i></span>
+		<span class="card-title activator">VIP Superlounge Pass<i class="mdi-navigation-more-vert right"></i></span>
 		<!--    <p><a href="#">This is a link</a></p> -->
 	</div>
 	<div class="card-reveal">
 		<span class="card-title">VIP Superlounge Pass<i class="mdi-navigation-close right"></i></span>
 		<p>Verizon customers, get exclusive acces to the Verizon Superlounge by singing up below. You will receive a Superlounge VIP Pass to add to either Passbook or Google Wallet.</p>
-  <div class="row">
-    <%= form_tag cards_form_process_path, :id => "enter-form", :class => "form", :role => "form" do %>
-    <div class="col s12">
-          <div class="input-field col s12">
-            <input type="tel" id="mdn" name="mdn" placeholder="xxx-xxx-xxxx" class="validate">
-            <label for="mdn">Mobile Number</label>
-          </div>
-    <button type="submit" class="btn btn-verizon waves-effect waves-light col s12">GET YOUR PASS</button>
-  <% end %>
-  </div>
+			
+				<form id="vip-enter" action="/main/enter" method="post"> 
+			     <input type="tel" class="form-control" id="mdn" name="mdn" placeholder="Mobile Number">
+					 <button>Submit</button>
+				</form>
 
 	</div>
 </div>  
