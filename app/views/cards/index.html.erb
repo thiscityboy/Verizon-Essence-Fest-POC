@@ -1,28 +1,25 @@
 <div id="card-container">
   <div class="row">
-    <div class="card-order col s12 m6 l4" order="2">
+    <div id="artists" class="card-order" order="3">
       <%= render 'cards/artists' %>
     </div>
-    <div class="card-order col s12 m6 l4" order="1">
+    <div id="qa" class="card-order" order="2">
       <%= render 'cards/qa' %>
     </div>
-  </div>
-  <div class="row">
-    <div class="card-order col s12 m6 l4" order="3">
+    <div id="exclusive" class="card-order" order="4">
       <%= render 'cards/exclusive' %>
     </div>
-    <div class="card-order col s12 m6 l4" order="4">
+    <div id="fashion" class="card-order" order="1">
       <%= render 'cards/fashion' %>
     </div>
   </div>
 </div>
 
 
-  <%= render 'layouts/modal' %>
 
 
 <script>
-$('#card-container').append($('#card-container .card-order').sort(function(a,b){
-   return parseInt(a.getAttribute('order'))-parseInt(b.getAttribute('order'))
-}));
+// $('#card-container').append($('#card-container .card-order').sort(function(a,b){
+//    return parseInt(a.getAttribute('order'))-parseInt(b.getAttribute('order'))
+// }));
 </script>
